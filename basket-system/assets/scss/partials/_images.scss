@@ -1,0 +1,81 @@
+.container{
+    .image-container{
+        display: flex;
+        .products{
+            display: flex;
+            flex-direction: column;
+            span{
+                display: flex;
+            }
+            .image{
+                height: 200px;
+                margin-right: 10px;
+                margin-top: 0;
+                display: inline-flex;
+                .my-name{
+                    margin-left: 220px;
+                    width: 200px;
+                }
+                .price{
+                    padding-left: 100px;
+                    justify-content: center;
+                }
+                .quantity{
+                    padding-left: 90px;
+                }
+                .total{
+                    padding-left: 160px;
+                }
+                .image-item{
+                    margin-top: 10px;
+                    width: 100px;
+                    height: 150px;
+                    img{
+                        margin-left: 150px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .close-icon{
+                    width: 50%;
+                }
+            }
+        }
+        .image{
+            position: relative;
+            padding: 5px;
+            margin-top: 120px;
+            width: 400px;
+            height: 450px;
+            &:hover .cart1,
+            &:hover .cart2,
+            &:hover .cart3{
+                bottom: 5px;
+                opacity: 1;
+                padding: 12px;
+                text-decoration: none;
+                width: 346px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .add-cart{
+                position: absolute;
+                width: 100%;
+                background-color: darkgrey;
+                transition: all 0.3s ease-in-out;
+                opacity: 0;
+                cursor: pointer;
+                text-align: center;
+                color: white;
+            }
+            h3{
+                margin-top: 20px;
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+}
